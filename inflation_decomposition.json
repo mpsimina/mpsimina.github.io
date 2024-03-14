@@ -2,6 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "title": {
     "text": "CPI - sources of inflation",
+    "textsize": 10,
     "subtitle": "Contributions to CPI all items by sub series",
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 10,
@@ -13,9 +14,13 @@
     "url": "https://raw.githubusercontent.com/RDeconomist/teaching2/main/cpiContributions.csv",
     "format": {"type": "csv"}
   },
-  "height": 350,
-  "width": 550,
-  "mark": {"type": "bar", "width": 3},
+  "height": 500,
+  "width": 950,
+  /* comments 
+  comments
+  more comments 
+  "mark": {"type": "bar", "width": 5},*/
+    "mark": "area",
   "transform": [{"filter": {"selection": "pickSeries"}}],
   "selection": {
     "pickSeries": {
@@ -49,7 +54,7 @@
       "field": "series",
       "type": "nominal",
       "legend": {"orient": "right"},
-      "scale": {"scheme": "inferno"},
+      "scale": {"scheme": "darkred"},
       "title": ""
     }
   }
