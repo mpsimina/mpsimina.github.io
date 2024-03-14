@@ -15,12 +15,8 @@
     "format": {"type": "csv"}
   },
   "height": 500,
-  "width": 950,
-  /* comments 
-  comments
-  more comments 
-  "mark": {"type": "bar", "width": 5},*/
-    "mark": "area",
+  "width": 600,
+  "mark": {"type": "bar", "width": 3},
   "transform": [{"filter": {"selection": "pickSeries"}}],
   "selection": {
     "pickSeries": {
