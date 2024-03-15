@@ -1,0 +1,28 @@
+{ "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+"data": {
+  "url": "https://raw.githubusercontent.com/mpsimina/mpsimina.github.io/main/s5_eco_words.csv",
+    "format":{"type":"csv"}},
+  "mark":"bar",
+  /*"mark": {
+    "type":"bar",
+    "size":150,
+    "color":"rgb(0,67,167)",
+    "opacity":0.2
+  },*/
+  
+  "height": 300,
+  "width": 400,
+
+  "encoding": {
+    "x": {
+      "field": "count",
+      "type": "quantitative",
+      "axis": {
+        "title": "Count"
+      }
+    },
+    "y": {
+      "field": "word", 
+      "sort": "x"}
+    }
+}

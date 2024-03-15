@@ -6,22 +6,22 @@
 
 body { /* We can style any HTML element by using its name - here we're styling the body */
   /* We want text that uses a clean sans-serif font, is usually 16px big and close to black */
-  font-family: fantasy;
+  font-family: 'Helvetica Neue', sans-serif;
   /*font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;*/
   font-size: 16px;
   color: #333;
   line-height: 1.6;
   /* we want a white page, that's centered and not too wide */
-  background-color: #fff;
+  background-color: rgb(255, 255, 255);
   margin:0 auto;
-  max-width: 800px;
-  padding-top: 60px;
+  max-width: 2500px;
+  padding-top: 0px;
 }
 
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
-  color: rgb(214, 39, 176);
+  color: rgb(31, 31, 31);
   margin-top: 24px;
   margin-bottom: 16px;
   font-weight: 600;
@@ -53,7 +53,7 @@ section {
 /* Links */
 /* We want the links to be a little more visible  and a different color */
 a {
-  color: #912707;
+  color: #5c7fe0;
   text-decoration: none;
 }
 
@@ -65,4 +65,41 @@ a:hover {
 img {
   max-width: 100%;
   height: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* responsive grid */
+
+.page-wrap {
+  flex-wrap: wrap;
+}
+
+.box,
+.chart-box
+{
+  display: inline-block;
+  padding: 0;
+  vertical-align: top;
+}
+
+.box h3 {
+  padding: 3px;
+}
+
+.one-col {
+  width: 48%;
+  display: inline-table;
+}
+
+.two-col {
+  width: 97%;
+  margin: 0 auto;
+}
+
+.inner-box {
+  padding: 6px;
 }
